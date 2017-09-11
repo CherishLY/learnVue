@@ -6,6 +6,10 @@ var app=new Vue({
     data:{
         "name":null,
         "sex":null,
-        "age":null
+        "age":null,
+        "sexTwo":'male',
+        article:"Lorem  a a d ds;af jsdfjdsaf ;a f",
+        from:"",
+        sexThree:[],
     }
 })

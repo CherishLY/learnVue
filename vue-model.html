@@ -7,6 +7,7 @@
 <body>
 <script src="https://cdn.bootcss.com/vue/2.4.2/vue.js"></script>
 <div id="app">
+
     <div>
         <input v-model.lazy="name">
         <span v-show="name">你的名字是 {{ name }}</span>
@@ -19,6 +20,39 @@
         <input v-model.trim="sex">
         <span v-show="sex">你的性别是 {{ sex }}</span>
     </div>
+
+<!-- v-model 其他类型的用法 -->
+    <label >
+        男
+        <input v-model="sexTwo" type="radio" value="male">
+    </label>
+    <label >
+        女
+        <input v-model="sexTwo" type="radio" value="female">
+    </label>
+    {{ sexTwo }}
+
+
+    <label >
+        男
+        <input v-model="sexThree" type="checkbox" value="male">
+    </label>
+    <label >
+        女
+        <input v-model="sexThree" type="checkbox" value="female">
+    </label>
+    {{ sexThree }}
+
+    <textarea v-model="article" ></textarea>
+
+    <label>你来自哪里</label>
+    <select v-model="from">
+        <option value="1">中国</option>
+        <option value="2">美国</option>
+        <option value="3">德国</option>
+    </select>
+
+    {{ from }}
 
 </div>
 <script src="./js/main.js"></script>
