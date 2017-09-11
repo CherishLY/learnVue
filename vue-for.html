@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>learn-for</title>
+    <style>
+        .active{
+            background:red;
+        }
+    </style>
 </head>
 <body>
 <script src="https://cdn.bootcss.com/vue/2.4.2/vue.js"></script>
@@ -10,6 +15,8 @@
     <ul>
         <li v-for="stu in grade">{{ stu.name }} 的年级是 {{stu.grade }}</li>
     </ul>
+    <!-- v-bing 可以省略-->
+    <a v-bind:class="{active:isActive}" v-bind:href="url">点我  </a>
 </div>
 <script src="./js/vue-for.js"></script>
 </body>

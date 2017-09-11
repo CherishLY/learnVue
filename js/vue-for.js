@@ -18,6 +18,8 @@ var app=new Vue({
                 grade:"一年级",
                 name:"ABC"
             },
-        ]
+        ],
+        isActive:true,
+        url:"http://www.baidu.com",
     }
 })
