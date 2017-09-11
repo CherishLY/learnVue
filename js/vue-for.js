@@ -21,5 +21,6 @@ var app=new Vue({
         ],
         isActive:true,
         url:"http://www.baidu.com",
+        role:'hr'
     }
 })
