@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="https://cdn.bootcss.com/vue/2.4.2/vue.js"></script>
+<div id="app">
+    <div>
+        <input v-model="name">
+        <span v-show="name">你的名字是 {{ name }}</span>
+    </div>
+    <div>
+        <input v-model="age">
+        <span v-show="age">你的年龄是 {{ age }}</span>
+    </div>
+    <div>
+        <input v-model="sex">
+        <span v-show="sex">你的性别是 {{ sex }}</span>
+    </div>
+
+</div>
+<script src="./js/main.js"></script>
+</body>
+</html>
