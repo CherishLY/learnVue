@@ -15,7 +15,7 @@
     <ul>
         <li v-for="stu in grade">{{ stu.name }} 的年级是 {{stu.grade }}</li>
     </ul>
-    <!-- v-bing 可以省略-->
+    <!-- v-bind 可以省略-->
     <a v-bind:class="{active:isActive}" v-bind:href="url">点我  </a>
 
     <div v-if="role== 'admin' ">
