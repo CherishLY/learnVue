@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .card {
+            width:300px;
+            height:100px;
+            background:#eee;
+            margin:5px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <div v-pined:true.bottom.right="card1.pained"  class="card">
+        <p>
+            <button @click="card1.pained = !card1.pained">定住/取消</button>
+            你好 你好你好你好年后你好到的发飞机的撒
+        </p>
+    </div>
+    <div v-pined="card2.pained"  class="card">
+        <p v-pined="">
+            <button @click="card2.pained = !card2.pained">定住/取消</button>
+            你好 你好你好你好年后你好到的发飞机的撒
+        </p>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus animi at aut cumque eligendi eos, exercitationem ipsam itaque, nam obcaecati placeat quam quia ratione repellat sapiente ut vero. Quas.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni pariatur, suscipit! Ad amet at, dolores eaque, fugit hic illo libero mollitia officia, officiis perferendis placeat praesentium reiciendis repellendus tempore voluptates?</p>
+</div>
+<script src="https://cdn.bootcss.com/vue/2.4.2/vue.js"></script>
+<script src="./js/vue-directive.js"></script>
+
+</body>
+</html>
