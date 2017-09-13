@@ -19,6 +19,21 @@ var routes=[
         component:{
             template:'#about'
         }
+    },{
+        path:'/article',
+        component:{
+            template:"#article_list"
+        },
+        children:[{
+            path:'/article/detail',
+            component:{
+                template:'#detail'
+            }
+        }
+
+        ]
+
+
     }
 ]
 var router=new VueRouter({

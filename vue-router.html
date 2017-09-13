@@ -10,6 +10,7 @@
         <router-link to="/">首页</router-link>
         <router-link to="/login">登录</router-link>
         <router-link to="/about">关于我们</router-link>
+        <router-link to="/article">文章列表</router-link>
     <div>
         <router-view></router-view>
     </div>
@@ -29,6 +30,34 @@
     <template id="about">
         <p>关于我们</p>
     </template>
+
+    <template id="article_list">
+        <div>
+            <router-link to="/article/detail" >
+
+                    <h3>苹果新手机上市</h3>
+                    <p class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, eligendi natus. Ad blanditiis dicta dolorem est ex facere fuga laudantium magni maxime molestias numquam, obcaecati provident qui reiciendis voluptas. Ea.
+                    </p>
+
+            </router-link>
+            <router-view></router-view>
+
+        </div>
+    </template>
+
+    <template id="detail">
+        <div>
+            <h2>信息消息新校</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate deleniti dolorem illum maiores nihil repellat totam voluptatem! Beatae dolorem earum, exercitationem expedita ipsam natus nisi, nostrum odit quae recusandae, sapiente?</p>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi debitis distinctio ducimus enim ipsam laudantium libero minus modi nam necessitatibus nemo, quas, recusandae reprehenderit sed similique sit tempore totam voluptates.
+            </p>
+        </div>
+
+    </template>
+
 <script src="https://cdn.bootcss.com/vue/2.4.2/vue.js"></script>
 <script src="https://cdn.bootcss.com/vue-router/2.7.0/vue-router.js"></script>
 <script src="./js/app.js"></script>
