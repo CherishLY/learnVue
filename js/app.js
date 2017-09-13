@@ -25,10 +25,15 @@ var routes=[
             template:"#article_list"
         },
         children:[{
-            path:'/article/detail',
+            path:'/article/detail:nid',
             component:{
-                template:'#detail'
+                template:'#detail',
+                methods:{
+
+                }
             }
+
+
         }
 
         ]

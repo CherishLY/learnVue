@@ -33,7 +33,7 @@
 
     <template id="article_list">
         <div>
-            <router-link to="/article/detail" >
+            <router-link to="/article/detail:nid" >
 
                     <h3>苹果新手机上市</h3>
                     <p class="content">
@@ -47,8 +47,8 @@
     </template>
 
     <template id="detail">
-        <div>
-            <h2>信息消息新校</h2>
+        <div >
+            <h2>信息消息新校 {{ $route.params.nid }}</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate deleniti dolorem illum maiores nihil repellat totam voluptatem! Beatae dolorem earum, exercitationem expedita ipsam natus nisi, nostrum odit quae recusandae, sapiente?</p>
 
             <p>
