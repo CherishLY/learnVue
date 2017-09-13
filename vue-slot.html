@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .panel{
+            margin:10px;
+            border:1px solid #eee;
+            ackground:#eee;
+        }
+        .panel >*{
+            font-size:14px;
+            font-family:"微软雅黑";
+            color:#555;
+            padding:5px;
+            border-bottom:1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <panel>
+        <div slot="title">IPhone 8 发布</div>
+        <div slot="content">
+            哈哈哈哈哈哈
+        </div>
+    </panel>
+
+    <panel>
+        <div slot="footer">
+            点击这里 查看更多
+        </div>
+    </panel>
+    <panel></panel>
+</div>
+
+<template id="panel-tpl">
+    <div class="panel">
+        <div class="title">
+            <slot name="title">默认标题</slot>
+        </div>
+        <div class="content">
+            <slot name="content">默认内容</slot>
+        </div>
+        <div class="footer">
+            <slot name="footer">默认底部</slot>
+        </div>
+    </div>
+</template>
+<script src="https://cdn.bootcss.com/vue/2.4.2/vue.js"></script>
+<script src="./js/vue-slot.js"></script>
+</body>
+</html>
