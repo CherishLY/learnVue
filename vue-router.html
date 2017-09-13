@@ -6,11 +6,13 @@
 </head>
 <body>
     <div id="app">
-
+    <div v-if="list">
         <router-link to="/">首页</router-link>
         <router-link to="/login">登录</router-link>
         <router-link to="/about">关于我们</router-link>
         <router-link to="/article">文章列表</router-link>
+    </div>
+
     <div>
         <router-view></router-view>
     </div>
@@ -33,7 +35,7 @@
 
     <template id="article_list">
         <div>
-            <router-link to="/article/detail:nid" >
+            <router-link  to="/article/detail:nid" >
 
                     <h3>苹果新手机上市</h3>
                     <p class="content">
@@ -41,8 +43,6 @@
                     </p>
 
             </router-link>
-            <router-view></router-view>
-
         </div>
     </template>
 
