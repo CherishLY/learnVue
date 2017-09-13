@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+
+        <router-link to="/">首页</router-link>
+        <router-link to="/login">登录</router-link>
+        <router-link to="/about">关于我们</router-link>
+    <div>
+        <router-view></router-view>
+    </div>
+
+
+    </div>
+
+
+
+
+<template id="index">
+    <p>这是首页</p>
+</template>
+    <template id="login">
+        <p>登录</p>
+    </template>
+    <template id="about">
+        <p>关于我们</p>
+    </template>
+<script src="https://cdn.bootcss.com/vue/2.4.2/vue.js"></script>
+<script src="https://cdn.bootcss.com/vue-router/2.7.0/vue-router.js"></script>
+<script src="./js/app.js"></script>
+</body>
+</html>
